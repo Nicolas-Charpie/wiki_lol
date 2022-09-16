@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background-color: #602161;
 }
 
 html, body {
@@ -12,12 +13,12 @@ html, body {
 
 body {
     padding: 30px;
-    padding-left: 0px;
+    padding-left: 0;
     box-sizing: border-box;
 }
 
 .title-champ {
-    font-size: 30px;
+    font-size: 15em;
     font-weight: 700;
     color: #546c84;
     text-align: center;
@@ -25,17 +26,18 @@ body {
 }
 
 figure {
-    padding: 4px;
+    padding-left: 0;
     background-color: #000000;
 }
 
-figcaption {
-    background-color: black;
-    color: white;
-    font-style: italic;
+.listchamp p{
+    width: 100%;
+    font-size: 17em;
+    font-weight: 700;
+    color: #546c84;
     text-align: center;
-    padding: 5px;
-    word-break: break-word;
+    margin-bottom: 30px;
+    background-color: #000;
 }
 
 .listchamp{
@@ -45,18 +47,20 @@ figcaption {
     list-style-type: none;
     padding-left: 0;
     margin-right: 3em;
+    margin-left: 0;
 }
 
 .listchamp li{
     border-radius: 2% !important;
-    width: 240px;
-    margin: 10px;
+    width: 20%;
     padding-top: 1.5%;
     background-color: #000000;
     color: white;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 0.1em;
     transition: 0.5s;
+    padding-left: 0;
+    margin: 15em 15em 0 0;
 }
 .listchamp li:hover{
     transform: scale(1.1);
@@ -65,6 +69,8 @@ figcaption {
 
 .listchamp img {
     object-fit: cover;
+    width: 100%;
+    height: 60%;
 }
 
 header {
@@ -86,6 +92,26 @@ header {
     box-sizing: border-box;
     float: right;
     text-align: right;
+}
+
+#search select{
+    width: 15%;
+    height: 100%;
+    border: none;
+    background-color: #000;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    box-sizing: border-box;
+    float: right;
+    text-align: left;
+    -webkit-appearance: none;
+}
+
+#search select option{
+    background-color: #000;
+    color: white;
+    text-align: center;
 }
 
 .ancre{

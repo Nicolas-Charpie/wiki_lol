@@ -29,8 +29,8 @@
 
             const liSelect = document.getElementById(value);
             liSelect.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
-            liSelect.style.backgroundColor = "red";
-            setTimeout(() => {  liSelect.style.backgroundColor = "black"; }, 750);
+            liSelect.style.backgroundColor = "#03224C";
+            setTimeout(() => {  liSelect.style.backgroundColor = "#000"; }, 1000);
         }
     </script>
 </header>
