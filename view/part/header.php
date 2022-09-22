@@ -30,7 +30,14 @@
             const liSelect = document.getElementById(value);
             liSelect.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
             liSelect.style.backgroundColor = "red";
-            setTimeout(() => {  liSelect.style.backgroundColor = "black"; }, 750);
+            liSelect.style.scale = "1.1";
+            liSelect.style.transition = "all 1s";
+
+            setTimeout(() => {
+                liSelect.style.backgroundColor = "black";
+                liSelect.style.transition = "all 10s";
+                liSelect.style.scale = "0.0";
+            }, 750);
         }
     </script>
 </header>
