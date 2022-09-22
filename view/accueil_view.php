@@ -5,10 +5,8 @@
             <li class="title-champ" id="<?= $r['id'] ?>">
                 <figure class="<?= $r['id'] ?>">
                     <img src="<?php echo $r['icon']?>" alt="icon" height="100" width="100">
-                    <figcaption <?php echo $r['name']?>>
-                        <p class="title-champ"><?php echo $r['name']?></p>
-                    </figcaption>
                 </figure>
+                <p class="title-champ"><?php echo $r['name']?></p>
             </li>
         <?php endforeach; ?>
     </ul>
