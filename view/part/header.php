@@ -10,7 +10,6 @@
 
 </head>
 <header>
-    <span class="titre">Wiki League Of Legends</span>
     <div id="search">
 
         <!-- recherche le champion avec autocompletion -->
@@ -24,9 +23,21 @@
     </div>
     <script>
         function getComboA(selectObject) {
-            let value = selectObject.value;
+            let value = selectObject.value.toLowerCase();
             <!-- se rend à lancre de l'id du champion -->
-            document.location.href="#"+value.toLowerCase();
+            //document.location.href="#"+value;
+
+            const liSelect = document.getElementById(value);
+            liSelect.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+            liSelect.style.backgroundColor = "red";
+            liSelect.style.scale = "1.1";
+            liSelect.style.transition = "all 1s";
+
+            setTimeout(() => {
+                liSelect.style.backgroundColor = "black";
+                liSelect.style.transition = "all 10s";
+                liSelect.style.scale = "0.0";
+            }, 750);
         }
     </script>
 </header>

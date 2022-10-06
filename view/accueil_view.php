@@ -2,13 +2,11 @@
     <hr>
     <ul class="listchamp">
         <?php foreach ($datas as $r): ?>
-            <li class="title-champ">
-                <figure id="<?= $r['id'] ?>">
-                    <img src="<?php echo $r['gif']?>" alt="icon" height="362" width="287">
-                    <figcaption <?php echo $r['name'].'-'.$r['title']?>>
-                        <p class="title-champ"><?php echo $r['name'].'-'.$r['title']?></p>
-                    </figcaption>
+            <li class="title-champ" id="<?= $r['id'] ?>">
+                <figure class="<?= $r['id'] ?>">
+                    <img src="<?php echo $r['icon']?>" alt="icon" height="100" width="100">
                 </figure>
+                <p class="title-champ"><?php echo $r['name']?></p>
             </li>
         <?php endforeach; ?>
     </ul>
